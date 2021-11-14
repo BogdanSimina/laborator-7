@@ -1,0 +1,55 @@
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("nume").innerHTML = "Ing. Simina Bogdan"
+  document.getElementById("nume").style.fontSize = "40px";
+  document.getElementById("l1").innerHTML = "Sa ne dezvoltam profesional"
+  document.getElementById("l2").innerHTML = "Sa ne facem conexiune in viata"
+  document.getElementById("l3").innerHTML = "Pentru a deveni un specialist in domeniu "
+  document.getElementById("imag").src="poza2.jpeg"
+  document.getElementById("imag").style.opacity = "1";
+  document.body.style.background="orange"
+  document.getElementById("nume").style.fontFamily = "verdana";
+  document.getElementById("nume").style.fontFamily ="Courier new"
+  document.getElementById("imag").style.borderRadius = "100px";
+ }
+ function changeTxt1(year)
+{
+var x = year.innerHTML;
+var y = new Date().getFullYear();
+x = y-x;
+year.innerHTML = x;
+}
+</script>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+<h1 id="nume">Simina Bogdan</h1>
+<p><h2>E-mail: bogdan_simina@yahoo.com.</h2></p>
+<p id="nrtel">0743xxxxxx</p> 
+<p id="year" style ="font-size:30px" onmouseover = "changeTxt1(this)" onmouseout = "changeTxt1(this)"> 2002 <p>
+<button type="button" onclick="myFunction()">Alta viata</button>
+<img id="imag" src="0891.jpg" alt="0891.jpg" >
+<p><h3>“Educatia este cea mai puternica arma pe care voi o puteti folosi pentru a schimba lumea.”</h3></p>
+<table style="width:100%">
+<tr> 
+<th><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/04.pdf">Programarea calculatoarelor si limbaje de programare</a></th>
+<th><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/06.pdf">Informatica aplicata </a></th>
+<th><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/05.pdf">Componete si circuite pasive </a></th>
+</tr>
+</table>
+<h2> <p class="solid">Hobby-uri</p></h2>
+<ul>
+<li id="l1" > <p class="solid"><h4>citit</h4></p></li>
+<li id="l2"><p class="solid"><h4>gatit</h4></p></li>
+<li id="l3"><p class="solid"><h4>fotografie</h4></p></li>
+</ul>
+<h2>Catalog</h2>
+<ul>
+<li><a href="necsa anamaria.html">Necsa Anamaria</a></li>
+<li><a href="ordace ionut.html">Ordace Ionut</a></li>
+<li><a href="terec razvan.html">Terec Razvan</a></li>
+</ul>
+</body>
+</html>
